@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5133C7272A60606E00354FED /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 5133C7262A60606E00354FED /* SDWebImage */; };
 		5133C7292A60606E00354FED /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5133C7282A60606E00354FED /* SDWebImageMapKit */; };
+		5133C72B2A60791C00354FED /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5133C72A2A60791C00354FED /* TitleTableViewCell.swift */; };
+		5133C72D2A607BB800354FED /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5133C72C2A607BB800354FED /* TitleViewModel.swift */; };
 		51C60E672A5B0048009E7125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C60E662A5B0048009E7125 /* AppDelegate.swift */; };
 		51C60E692A5B0048009E7125 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C60E682A5B0048009E7125 /* SceneDelegate.swift */; };
 		51C60E6B2A5B0048009E7125 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C60E6A2A5B0048009E7125 /* MainTabBarViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5133C72A2A60791C00354FED /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		5133C72C2A607BB800354FED /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 		51C60E632A5B0048009E7125 /* Netflix Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netflix Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C60E662A5B0048009E7125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51C60E682A5B0048009E7125 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 				51C60E8A2A5B09B9009E7125 /* CollectionViewTableViewCell.swift */,
 				51C60E8C2A5B11DC009E7125 /* HeroHeaderUIView.swift */,
 				51C60ECE2A605D4C009E7125 /* TitleCollectionViewCell.swift */,
+				5133C72A2A60791C00354FED /* TitleTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 		51C60E862A5B0955009E7125 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				5133C72C2A607BB800354FED /* TitleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -223,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5133C72B2A60791C00354FED /* TitleTableViewCell.swift in Sources */,
 				51C60E822A5B02A0009E7125 /* SearchViewController.swift in Sources */,
 				51C60ECF2A605D4C009E7125 /* TitleCollectionViewCell.swift in Sources */,
 				51C60E6B2A5B0048009E7125 /* MainTabBarViewController.swift in Sources */,
@@ -236,6 +243,7 @@
 				51C60E7E2A5B0276009E7125 /* UpcomingViewController.swift in Sources */,
 				51C60E912A5B2BB5009E7125 /* Title.swift in Sources */,
 				51C60E7C2A5B025C009E7125 /* HomeViewController.swift in Sources */,
+				5133C72D2A607BB800354FED /* TitleViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
