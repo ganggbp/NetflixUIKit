@@ -51,7 +51,7 @@ class APICaller {
             do {
                 //                let results = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
                 let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
-                print(results)
+                completion(.success(results.results))
             } catch {
                 completion(.failure(APIError.failedToGetData))
             }
@@ -61,7 +61,7 @@ class APICaller {
     }
     
     func getUpcomingMovies(completion: @escaping (Result<[Title], Error>) -> Void) {
-        guard let url = URL(string: "\(Constants.baseURL)/3/upcoming?api_key=\(Constants.API_KEY)&language=en-US&page=1") else {
+        guard let url = URL(string: "\(Constants.baseURL)/3/movie/upcoming?api_key=\(Constants.API_KEY)&language=en-US&page=1") else {
             return
         }
         
@@ -72,7 +72,7 @@ class APICaller {
             
             do {
                 let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
-                print(results)
+                completion(.success(results.results))
             } catch {
                 completion(.failure(APIError.failedToGetData))
             }
@@ -91,7 +91,7 @@ class APICaller {
             
             do {
                 let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
-                print(results)
+                completion(.success(results.results))
             } catch {
                 completion(.failure(APIError.failedToGetData))
             }
@@ -110,7 +110,7 @@ class APICaller {
             
             do {
                 let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
-                print(results)
+                completion(.success(results.results))
             } catch {
                 completion(.failure(APIError.failedToGetData))
             }
